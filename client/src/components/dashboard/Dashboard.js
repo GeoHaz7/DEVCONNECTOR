@@ -14,7 +14,7 @@ const Dashboard = () => {
   const auth = useSelector((state) => state.auth);
   useEffect(() => {
     dispatch(getCurrentProfile());
-  }, []);
+  }, [dispatch]);
 
   const deleteAcc = () => {
     dispatch(deleteAccount());
@@ -34,9 +34,9 @@ const Dashboard = () => {
           <Experience experience={profile.profile.experience} />
           <Education education={profile.profile.education} />
 
-          <div class='my-2'>
-            <button class='btn btn-danger' onClick={() => deleteAcc()}>
-              <i class='fas fa-user-minus'></i> Delete My Account
+          <div className='my-2'>
+            <button className='btn btn-danger' onClick={() => deleteAcc()}>
+              <i className='fas fa-user-minus'></i> Delete My Account
             </button>
           </div>
         </Fragment>

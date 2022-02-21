@@ -32,13 +32,13 @@ const Education = ({ education }) => {
   ));
   return (
     <Fragment>
-      <h2 class='my-2'>Education Credentials</h2>
-      <table class='table'>
+      <h2 className='my-2'>Education Credentials</h2>
+      <table className='table'>
         <thead>
           <tr>
             <th>School</th>
-            <th class='hide-sm'>Degree</th>
-            <th class='hide-sm'>Years</th>
+            <th className='hide-sm'>Degree</th>
+            <th className='hide-sm'>Years</th>
             <th />
           </tr>
         </thead>

@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import Moment from 'react-moment';
 import { useDispatch } from 'react-redux';
 import { deleteExperience } from '../../actions/profile';
-import PropTypes from 'prop-types';
 
 const Experience = ({ experience }) => {
   const dispatch = useDispatch();
@@ -37,13 +36,13 @@ const Experience = ({ experience }) => {
   ));
   return (
     <Fragment>
-      <h2 class='my-2'>Experience Credentials</h2>
-      <table class='table'>
+      <h2 className='my-2'>Experience Credentials</h2>
+      <table className='table'>
         <thead>
           <tr>
             <th>Company</th>
-            <th class='hide-sm'>Title</th>
-            <th class='hide-sm'>Years</th>
+            <th className='hide-sm'>Title</th>
+            <th className='hide-sm'>Years</th>
             <th />
           </tr>
         </thead>
